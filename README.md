@@ -1,4 +1,4 @@
-# OOP244
+#OOP244
 A repo for my school work in OOP244 subject
 - Student Number: 121720247
 - Name: Alan Sanchez
