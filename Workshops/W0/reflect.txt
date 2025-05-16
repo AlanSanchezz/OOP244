@@ -1,0 +1,1 @@
+The challenges I faced during the development of this workshop were relatively easy, because I already had some background in C programming and matrix account (Bash) from my first semester. However, it was my first time trying to understand commit, push, and pull, and I found it quite confusing at first.
