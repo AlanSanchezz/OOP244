@@ -21,6 +21,7 @@ for suggestions. However, all the coding was done by myself, except for the code
 my professor for the ‘whatever’ function.
 ----------------------------------------------------------
 */
+#include <cstring>
 #include "io.h"
 #include <iostream>
 using namespace std;
