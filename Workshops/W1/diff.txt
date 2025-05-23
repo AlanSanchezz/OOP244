@@ -1,0 +1,14 @@
+In line number 161 of your output:
+The output should be:
+> 5
+  ^
+But your output is: 
+> Bar
+  ^
+
+Unmatched character details:
+The character in column 3 is supposed to be:
+  [5] ASCII code(53)
+but you printed
+  [B] ASCII code(66)
+

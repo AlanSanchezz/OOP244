@@ -19,6 +19,6 @@
 using namespace std;
 int main(int argc, const char * argv[]) {
     
-    cout << "#### Workshop Zero ####\nSubject and Section:\n(OOP244 NAA)\nName:\nAlan Yahir Garduno Sanchez\nStudent Number:\n121720247\nEmail:\naygarduno-sanchez@myseneca.ca\n";
+    cout << "#### Workshop Zero ####\nSubject and Section:\n(OOP244 NAA)\nName:\nAlan Yahir Garduno Sanchez\nStudent Number:\n121720247\nEmail:\naygarduno-sanchez@myseneca.ca    Github acc(alanbega19@gmail.com)\n";
     return 0;
 }

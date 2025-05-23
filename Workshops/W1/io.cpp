@@ -28,7 +28,7 @@ using namespace std;
 namespace seneca{
 
     void read(char* name) {
-        cout << "Name: ";
+        cout << "Name\n> ";
         cin >> name;
     }
     

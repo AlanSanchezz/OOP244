@@ -1,9 +1,9 @@
-Script started on Wed 14 May 2025 07:56:03 PM EDT
-==81964== Memcheck, a memory error detector
-==81964== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==81964== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
-==81964== Command: ws.exe
-==81964== 
+Script started on Fri 16 May 2025 12:40:15 PM EDT
+==110158== Memcheck, a memory error detector
+==110158== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==110158== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==110158== Command: ws.exe
+==110158== 
 #### Workshop Zero ####
 Subject and Section:
 (OOP244 NAA)
@@ -12,14 +12,14 @@ Alan Yahir Garduno Sanchez
 Student Number:
 121720247
 Email:
-aygarduno-sanchez@myseneca.ca
-==81964== 
-==81964== HEAP SUMMARY:
-==81964==     in use at exit: 0 bytes in 0 blocks
-==81964==   total heap usage: 1 allocs, 1 frees, 72,704 bytes allocated
-==81964== 
-==81964== All heap blocks were freed -- no leaks are possible
-==81964== 
-==81964== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+aygarduno-sanchez@myseneca.ca    Github acc(alanbega19@gmail.com)
+==110158== 
+==110158== HEAP SUMMARY:
+==110158==     in use at exit: 0 bytes in 0 blocks
+==110158==   total heap usage: 1 allocs, 1 frees, 72,704 bytes allocated
+==110158== 
+==110158== All heap blocks were freed -- no leaks are possible
+==110158== 
+==110158== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 
-Script done on Wed 14 May 2025 07:56:04 PM EDT
+Script done on Fri 16 May 2025 12:40:16 PM EDT
