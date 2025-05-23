@@ -15,8 +15,9 @@ Name            Date            Reason
 Alan Yahir Garduno Sanchez 2025-05-19  Created
 Alan Yahir Garduno Sanchez 2025-05-19  Last Modified
 -----------------------------------------------------------
-I have done all the coding by myself and only copied the code 
-that my professor provided to complete my work for function whatever.
+I used online resources like Google, official documentation, and even relied on IntelliSense 
+for suggestions. However, all the coding was done by myself, except for the code provided by 
+my professor for the ‘whatever’ function.
 -----------------------------------------------------------
 */
 #include "cstr.h"
