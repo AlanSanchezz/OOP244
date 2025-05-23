@@ -66,22 +66,22 @@ using namespace std;
 // }
 
 //Uncomment each function separately to test
-void testPrintPhoneRec() {
-  cout << "Testing: void print(const PhoneRec&, size_t&, const char* = nullptr)" << endl;
-  const PhoneRec pr = { "John", "Doe", 4165551234 };
-  size_t row = 1;
-  print(pr, row);
-  print(pr, row, "Jo");
-  print(pr, row, "Do");
-  print(pr, row, "oh");
-  print(pr, row, "oe");
-  print(pr, row, "jake"); // nothing should be printed
-  cout << "============================\n============================" << endl;
-}
+// void testPrintPhoneRec() {
+//   cout << "Testing: void print(const PhoneRec&, size_t&, const char* = nullptr)" << endl;
+//   const PhoneRec pr = { "John", "Doe", 4165551234 };
+//   size_t row = 1;
+//   print(pr, row);
+//   print(pr, row, "Jo");
+//   print(pr, row, "Do");
+//   print(pr, row, "oh");
+//   print(pr, row, "oe");
+//   print(pr, row, "jake"); // nothing should be printed
+//   cout << "============================\n============================" << endl;
+// }
 
 
 //Uncomment each function separately to test
-//void testPrintPhonePtrs() {
+// void testPrintPhonePtrs() {
 //   cout << "Testing:void print(PhoneRec* [], size_t, const char* = nullptr)" << endl;
 //   PhoneRec pr[3] = {
 //      {"John", "Doe", 1231231234},
@@ -93,11 +93,11 @@ void testPrintPhoneRec() {
 //   cout << "---------------------------" << endl;
 //   print(ptrs, 3);
 //   cout << "============================\n============================" << endl;
-//}
+// }
 
 
-//Uncomment each function separately to test
-//void testSetPointers() {
+// //Uncomment each function separately to test
+// void testSetPointers() {
 //   cout << "Testing:void setPointers(...)" << endl;
 //   PhoneRec pr[3] = {
 //      {"John", "Doe", 1231231234},
@@ -108,36 +108,36 @@ void testPrintPhoneRec() {
 //   setPointers(ptrs, pr, 3);
 //   print(ptrs, 3);
 //   cout << "============================\n============================" << endl;
-//}
+// }
 
 
 //Uncomment each function separately to test
-//void testSort() {
-//   cout << "Testing:void sort(...)" << endl;
-//   PhoneRec pr[20];
-//   PhoneRec* ptrs[20];
-//   std::FILE* file = fopen("phones.tsv", "r");
-//   for (size_t i = 0; read(pr[i], file); i++);
-//   fclose(file);
-//   setPointers(ptrs, pr, 20);
-//   cout << "Phone Recorded sorty by name: " << endl;
-//   sort(ptrs, 20, false);
-//   print(ptrs, 20);
-//   cout << "============================" << endl;
-//   cout << "Phone Recorded sorty by last name: " << endl;
-//   sort(ptrs, 20, true);
-//   print(ptrs, 20);
-//   cout << "============================\n============================" << endl;
-//}
+void testSort() {
+  cout << "Testing:void sort(...)" << endl;
+  PhoneRec pr[20];
+  PhoneRec* ptrs[20];
+  std::FILE* file = fopen("phones.tsv", "r");
+  for (size_t i = 0; read(pr[i], file); i++);
+  fclose(file);
+  setPointers(ptrs, pr, 20);
+  cout << "Phone Recorded sorty by name: " << endl;
+  sort(ptrs, 20, false);
+  print(ptrs, 20);
+  cout << "============================" << endl;
+  cout << "Phone Recorded sorty by last name: " << endl;
+  sort(ptrs, 20, true);
+  print(ptrs, 20);
+  cout << "============================\n============================" << endl;
+}
 
 int main() {
    //testReadName();
    //testReadFile();
   // testPrintNumber();
-   testPrintPhoneRec();
-//   testPrintPhonePtrs();
-//   testSetPointers();
-//   testSort();
+   //testPrintPhoneRec();
+//testPrintPhonePtrs();
+   //testSetPointers();
+  testSort();
    return 0;
 }
 

@@ -30,7 +30,6 @@ namespace seneca{
     }
     
     void print(long long phoneNumber) {
-        cout << "Phone Number: ";
         int areaCode = phoneNumber / 10000000;
         int centralOfficeCode = (phoneNumber / 10000) % 1000;
         int lineNumber = phoneNumber % 10000;
@@ -47,12 +46,42 @@ namespace seneca{
         }
     }
 
-    void print(const PhoneRec& pr, size_t& row, const char* substr= nullptr){
-        if (substr != nullptr) {
-            
-
+    void print(const PhoneRec& pr, size_t& row, const char* substr){
+        if (substr == nullptr) {
+            cout << row << ": " << pr.FirstName << " " << pr.LastName << " ";
+            print(pr.PhoneNumber);
+            row++;
         }
+        else if(strstr(pr.FirstName, substr) || strstr(pr.LastName, substr)) {
+            cout << row << ": " << pr.FirstName << " " << pr.LastName << " ";
+            print(pr.PhoneNumber);
+            row++;
+        }
+    }
+    
+    
+    void print(PhoneRec* pr[], size_t size, const char* substr) {
+        size_t row = 1;
+        for (size_t i = 0; i < size; ++i) {
+            print(*pr[i], row, substr);
+        }
+    }
 
+    void setPointers(PhoneRec* ptrs[], PhoneRec pr[], size_t size) {
+        for (size_t i = 0; i < size; ++i) {
+            ptrs[i] = &pr[i];
+        }
+    }
+    
+    void sort(PhoneRec* pr[], size_t size, bool byLastName) {
+        for (size_t i = 0; i < size - 1; ++i) {
+            for (size_t j = i + 1; j < size; ++j) {
+                if ((byLastName && strcmp(pr[i]->LastName, pr[j]->LastName) > 0) ||
+                    (!byLastName && strcmp(pr[i]->FirstName, pr[j]->FirstName) > 0)) {
+                    std::swap(pr[i], pr[j]);
+                }
+            }
+        }
     }
 
 

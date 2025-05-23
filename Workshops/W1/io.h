@@ -34,6 +34,16 @@ namespace seneca {
     void print(long long phoneNumber);
     //Reads a PhoneRec from a tab-separated record in a file.
     bool read(PhoneRec& pr, FILE* fptr);
+    //Prints a PhoneRec in the format RowNumber: Name LastName (999) 999-9999
+    void print(const PhoneRec& pr, size_t& row, const char* substr = nullptr);
+    //Prints an array of PhoneRec pointers, filtering by a substring if provided.
+    void print(PhoneRec* pr[], size_t size, const char* substr = nullptr);
+    //Sets an array of PhoneRec pointers to point to the original PhoneRec array.
+    void setPointers(PhoneRec* ptrs[], PhoneRec pr[], size_t size);
+    //Sorts an array of PhoneRec pointers by name or last name.
+    void sort(PhoneRec* pr[], size_t size, bool byLastName);
+
+    
 
 
 }

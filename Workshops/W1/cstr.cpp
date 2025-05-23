@@ -95,7 +95,7 @@ namespace seneca {
     }
     const char* strstr(const char* str, const char* toFind) {
         const char* faddress = nullptr;
-        size_t
+        size_t 
         i,
         flen = strlen(toFind),
         slen = strlen(str);
