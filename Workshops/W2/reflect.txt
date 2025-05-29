@@ -1,0 +1,6 @@
+During this workshop, I learned how to properly manage dynamic memory in C++, including how to allocate, copy, and deallocate memory for both arrays and strings. I now have a much better understanding of how `new`, `delete`, and pointer references work, especially when working with structs that contain dynamicailly allocated members like `char*` and `int*`. I also practiced writing helper functions that operate on dynamically allocated data, such as `append` and `add`, and how to update pointers correctly using references. This helped me reinforce my understanding of passing pointers by reference and how memory is managed on the heap.
+
+One difficulty I had was resolving Git conflicts during merges and figuring out how to reset my local repository to match the remote version. It was a bit frustrating at first, but now I know how to use commands like `git stash`, `reset --hard`, and `pull --rebase` to clean up my workspace.
+
+My only suggestion for the professor would be to spend a bit more time going over common Git issues during class, especially how to handle merge conflicts or what to do when local and remote branches diverge. Overall, I found the workshop very useful for applying dynamic memory concepts in a realistic scenario.
+
