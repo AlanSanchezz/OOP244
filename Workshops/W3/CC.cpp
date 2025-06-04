@@ -1,3 +1,26 @@
+/* 
+-----------------------------------------------------------
+Workshop W3
+Module: CC
+Filename: CC.cpp
+-----------------------------------------------------------
+Author: Alan Sanchez
+Student number: 121720247
+Email: aygarduno-sanchez@myseneca.ca
+Subject: OOP244
+-----------------------------------------------------------
+Revision History
+------- --------- ------------------------------------------
+Version Date      Reason
+V1.0   2025/06/04  Initial release
+V1.1   2025/06/05  Added comments and cleaned up code
+-----------------------------------------------------------
+All coding was done independently by me, with the support of online resources to deepen my 
+understanding of the concepts. The only exceptions are portions of code explicitly supplied by my
+professor. 
+-----------------------------------------------------------
+*/
+
 #include <iostream>
 #include "cstr.h"
 #include "CC.h"
