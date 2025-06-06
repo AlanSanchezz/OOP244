@@ -136,7 +136,6 @@ namespace seneca {
       set();
    }
    CC::CC(const char* name, unsigned long long cc_no, short cvv, short expMon, short expYear) {
-      deallocate();
       set();
       if (validate(name, cc_no, cvv, expMon, expYear)) {
          aloCopy(name);
