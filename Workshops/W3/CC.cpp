@@ -113,6 +113,7 @@ namespace seneca {
    }
    // Set the credit card information
    void CC::set(const char* name, unsigned long long cc_no, short cvv, short expMon, short expYear) {
+      deallocate(); // Free memory
       set(); // Set to safe empty state
       if (validate(name, cc_no, cvv, expMon, expYear)) {
         aloCopy(name);
