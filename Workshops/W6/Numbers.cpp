@@ -25,7 +25,6 @@ namespace seneca {
     // Default constructor: initialize object to a safe empty state
     Numbers::Numbers() {
         setEmpty();
-        m_isOriginal = false;
     }
  
     // Constructor that takes filename: loads data from the file
@@ -51,9 +50,12 @@ namespace seneca {
 
     // Set object to safe empty state and free memory
     void Numbers::setEmpty() {
+        delete[] m_numbers;
         m_numbers = nullptr;
+        delete[] m_filename;
         m_filename = nullptr;
         m_numCount = 0;
+        m_isOriginal = false;
     }
 
     // Sort the numbers array in ascending order using simple bubble sort
