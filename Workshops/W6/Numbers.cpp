@@ -33,12 +33,9 @@ namespace seneca {
         m_numCount = 0;
         m_isOriginal = true;
         if (filename != nullptr && filename[0] != '\0') {
-            // Allocate memory and copy filename
             m_filename = new char[strlen(filename) + 1];
             strcpy(m_filename, filename);
-            // Count numbers in file
             m_numCount = numberCount();
-            // Load numbers from file into array
             if (!load()) {
                 setEmpty();
             }
