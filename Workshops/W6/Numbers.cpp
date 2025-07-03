@@ -217,6 +217,13 @@ namespace seneca {
         m_numCount = 0;
         m_isOriginal = false;
 
+        if (other.m_filename) {
+            m_filename = new char[strlen(other.m_filename) + 1];
+            strcpy(m_filename, other.m_filename);
+        } else {
+            m_filename = nullptr;
+        }
+
         if (!other.isEmpty()) {
             m_numCount = other.m_numCount;
             m_numbers = new double[m_numCount];
@@ -232,6 +239,14 @@ namespace seneca {
             delete[] m_numbers;
             m_numbers = nullptr;
             m_numCount = 0;
+
+            delete[] m_filename;
+            m_filename = nullptr;
+            if (other.m_filename) {
+                m_filename = new char[strlen(other.m_filename) + 1];
+                strcpy(m_filename, other.m_filename);
+            }
+
             // Keep m_isOriginal unchanged!
             if (!other.isEmpty()) {
                 m_numCount = other.m_numCount;
