@@ -20,8 +20,8 @@ namespace seneca {
    class Numbers {
       double* m_numbers;
       char* m_filename;
-      bool m_isOriginal;
       int m_numCount;
+      bool m_isOriginal;
       bool isEmpty() const;
       void setEmpty();
       void setFilename(const char* filename);
