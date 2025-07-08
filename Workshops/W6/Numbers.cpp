@@ -60,58 +60,7 @@ namespace seneca {
         m_isOriginal = false;  // Mark as not original object
     }
 
-    // Sort the numbers array in ascending order using bubble sort
-    void Numbers::sort() {
-        int i, j;
-        double temp;
-        for (i = m_numCount - 1; i > 0; i--) {
-            for (j = 0; j < i; j++) {
-                if (m_numbers[j] > m_numbers[j + 1]) {
-                    temp = m_numbers[j];
-                    m_numbers[j] = m_numbers[j + 1];
-                    m_numbers[j + 1] = temp;
-                }
-            }
-        }
-    }
-
-    // Check if the object is empty (safe empty state)
-    bool Numbers::isEmpty() const {
-        return m_numbers == nullptr;
-    }
-
-    // Return the maximum number in the array (assuming not empty)
-    double Numbers::max() const {
-        double maxVal = 0.0;
-        if (!isEmpty()) {
-            maxVal = m_numbers[0];
-            for (int i = 1; i < m_numCount; i++)
-                if (maxVal < m_numbers[i]) maxVal = m_numbers[i];
-        }
-        return maxVal;
-    }
-
-    // Return the minimum number in the array (assuming not empty)
-    double Numbers::min() const {
-        double minVal = 0.0;
-        if (!isEmpty()) {
-            minVal = m_numbers[0];
-            for (int i = 1; i < m_numCount; i++)
-                if (minVal > m_numbers[i]) minVal = m_numbers[i];
-        }
-        return minVal;
-    }
-
-    // Return the average of the numbers (assuming not empty)
-    double Numbers::average() const {
-        double aver = 0.0;
-        if (!isEmpty()) {
-            for (int i = 0; i < m_numCount; i++)
-                aver += m_numbers[i];
-            aver = aver / m_numCount;
-        }
-        return aver;
-    }
+    
 
     // ************** Your implemented methods below **************
 
