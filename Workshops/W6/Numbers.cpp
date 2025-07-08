@@ -22,44 +22,6 @@ namespace seneca {
 
     // ************** Partial implementations based on professor's instructions **************
 
-    // Default constructor: initialize object members using member initializer list
-    Numbers::Numbers()
-        : m_numbers(nullptr), m_filename(nullptr), m_numCount(0), m_isOriginal(false) {
-        // No need to call setEmpty() here since members are initialized
-    }
- 
-    // Constructor that takes filename: loads data from the file
-    Numbers::Numbers(const char* filename) {
-        m_numbers = nullptr;
-        m_numCount = 0;
-        m_isOriginal = true; // This object is the original, responsible for saving
-        if (filename != nullptr && filename[0] != '\0') {
-            // Allocate and copy filename string
-            m_filename = new char[strlen(filename) + 1];
-            strcpy(m_filename, filename);
-            // Count how many numbers exist in the file
-            m_numCount = numberCount();
-            // Load numbers from the file into dynamic array
-            if (!load()) {
-                // If loading failed, set to safe empty state
-                setEmpty();
-            }
-        } else {
-            m_filename = nullptr;
-            setEmpty();
-        }
-    }
-
-    // Set object to safe empty state and free allocated memory
-    void Numbers::setEmpty() {
-        delete[] m_numbers;    // Free dynamic array memory if any
-        m_numbers = nullptr;   // Reset pointer to null
-        delete[] m_filename;   // Free filename memory if any
-        m_filename = nullptr;  // Reset filename pointer
-        m_numCount = 0;        // Reset count to zero
-        m_isOriginal = false;  // Mark as not original object
-    }
-
     
 
     // ************** Your implemented methods below **************
@@ -237,11 +199,5 @@ namespace seneca {
         m_filename = nullptr;
     }
 
-    // Set the filename for the Numbers object
-    void Numbers::setFilename(const char* filename) {
-        delete[] m_filename;
-        m_filename = new char[strlen(filename) + 1];
-        strcpy(m_filename, filename);
-    }
-
+    
 }

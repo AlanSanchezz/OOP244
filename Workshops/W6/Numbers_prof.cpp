@@ -54,6 +54,7 @@ namespace seneca {
       m_filename = new char[strlen(filename) + 1];
       strcpy(m_filename, filename);
    }
+   
    void Numbers::sort() {
       int i, j;
       double temp;
