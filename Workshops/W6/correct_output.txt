@@ -1,3 +1,9 @@
+Script started on Mon 28 Oct 2024 09:29:50 PM EDT
+==76985== Memcheck, a memory error detector
+==76985== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==76985== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==76985== Command: ws.exe
+==76985== 
 
 Content of "numbers.txt"
 *****************************************************************
@@ -105,7 +111,7 @@ In this test we use your insertion and extraction operators to do
 File IO. This makes sure your implementation is done correctly
 using the reference of istream and ostream and NOT cin and cout
 
-N before adding thre numbers
+N before adding three numbers
 =========================
 numbers.txt
 3.00, 6.00, 12.20, 34.10, 34.56, 1000.00
@@ -168,3 +174,13 @@ Smallest number: -5.00
 Average:         182.24
 =========================
 *****************************************************************
+==76985== 
+==76985== HEAP SUMMARY:
+==76985==     in use at exit: 0 bytes in 0 blocks
+==76985==   total heap usage: 74 allocs, 74 frees, 232,711 bytes allocated
+==76985== 
+==76985== All heap blocks were freed -- no leaks are possible
+==76985== 
+==76985== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Mon 28 Oct 2024 09:29:57 PM EDT

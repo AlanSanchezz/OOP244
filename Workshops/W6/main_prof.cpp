@@ -3,7 +3,6 @@
 //
 // File	main.cpp
 // Version 1.0
-// Date	2024/09/27
 // Author	Fardad Soleimanloo
 // Description
 //
