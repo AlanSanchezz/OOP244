@@ -28,7 +28,6 @@ int main() {
    cout << "Enter the following:" << endl;
    cout << "John Doe, 12312, 65432,IPC144 - Introduction to Programming Using C,3<ENTER>\n> ";
    cin >> P;
-   cin.ignore( 1000, '\n' );
    cout << "You enterd:" << endl;
    P.title() << endl;
    cout << P << endl;
