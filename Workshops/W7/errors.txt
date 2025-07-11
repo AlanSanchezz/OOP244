@@ -1,0 +1,115 @@
+ws.exe: In function `_start':
+(.text+0x0): multiple definition of `_start'
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o:(.text+0x0): first defined here
+ws.exe: In function `_fini':
+(.fini+0x0): multiple definition of `_fini'
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o:(.fini+0x0): first defined here
+ws.exe:(.rodata+0x0): multiple definition of `_IO_stdin_used'
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o:(.rodata.cst4+0x0): first defined here
+ws.exe: In function `data_start':
+(.data+0x0): multiple definition of `__data_start'
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o:(.data+0x0): first defined here
+ws.exe:(.rodata+0x8): multiple definition of `__dso_handle'
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o:(.rodata+0x0): first defined here
+ws.exe: In function `_init':
+(.init+0x0): multiple definition of `_init'
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o:(.init+0x0): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::salary() const':
+Employee.cpp:(.text+0x0): multiple definition of `seneca::Employee::salary() const'
+ws.exe:(.text+0xee): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::Employee(char const*, unsigned long, double)':
+Employee.cpp:(.text+0x1c): multiple definition of `seneca::Employee::Employee(char const*, unsigned long, double)'
+ws.exe:(.text+0x10a): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::Employee(char const*, unsigned long, double)':
+Employee.cpp:(.text+0x1c): multiple definition of `seneca::Employee::Employee(char const*, unsigned long, double)'
+ws.exe:(.text+0x10a): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::~Employee()':
+Employee.cpp:(.text+0x68): multiple definition of `seneca::Employee::~Employee()'
+ws.exe:(.text+0x156): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::~Employee()':
+Employee.cpp:(.text+0x68): multiple definition of `seneca::Employee::~Employee()'
+ws.exe:(.text+0x156): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::title(std::ostream&) const':
+Employee.cpp:(.text+0x92): multiple definition of `seneca::Employee::title(std::ostream&) const'
+ws.exe:(.text+0x180): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::read(std::istream&)':
+Employee.cpp:(.text+0xb6): multiple definition of `seneca::Employee::read(std::istream&)'
+ws.exe:(.text+0x1a4): first defined here
+/tmp/ccAErKl6.o: In function `seneca::Employee::write(std::ostream&) const':
+Employee.cpp:(.text+0x156): multiple definition of `seneca::Employee::write(std::ostream&) const'
+ws.exe:(.text+0x244): first defined here
+/tmp/ccAErKl6.o: In function `seneca::operator<<(std::ostream&, seneca::Employee const&)':
+Employee.cpp:(.text+0x3bb): multiple definition of `seneca::operator<<(std::ostream&, seneca::Employee const&)'
+ws.exe:(.text+0x4a9): first defined here
+/tmp/ccAErKl6.o: In function `seneca::operator>>(std::istream&, seneca::Employee&)':
+Employee.cpp:(.text+0x3e0): multiple definition of `seneca::operator>>(std::istream&, seneca::Employee&)'
+ws.exe:(.text+0x4ce): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::Professor()':
+Professor.cpp:(.text+0x0): multiple definition of `seneca::Professor::Professor()'
+ws.exe:(.text+0x68c): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::Professor()':
+Professor.cpp:(.text+0x0): multiple definition of `seneca::Professor::Professor()'
+ws.exe:(.text+0x68c): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::Professor(char const*, char const*, int, int, double)':
+Professor.cpp:(.text+0x32): multiple definition of `seneca::Professor::Professor(char const*, char const*, int, int, double)'
+ws.exe:(.text+0x6be): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::Professor(char const*, char const*, int, int, double)':
+Professor.cpp:(.text+0x32): multiple definition of `seneca::Professor::Professor(char const*, char const*, int, int, double)'
+ws.exe:(.text+0x6be): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::~Professor()':
+Professor.cpp:(.text+0xd4): multiple definition of `seneca::Professor::~Professor()'
+ws.exe:(.text+0x760): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::~Professor()':
+Professor.cpp:(.text+0xd4): multiple definition of `seneca::Professor::~Professor()'
+ws.exe:(.text+0x760): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::devPay() const':
+Professor.cpp:(.text+0x10c): multiple definition of `seneca::Professor::devPay() const'
+ws.exe:(.text+0x798): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::title(std::ostream&) const':
+Professor.cpp:(.text+0x154): multiple definition of `seneca::Professor::title(std::ostream&) const'
+ws.exe:(.text+0x7e0): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::read(std::istream&)':
+Professor.cpp:(.text+0x18a): multiple definition of `seneca::Professor::read(std::istream&)'
+ws.exe:(.text+0x816): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::Professor::write(std::ostream&) const':
+Professor.cpp:(.text+0x32e): multiple definition of `seneca::Professor::write(std::ostream&) const'
+ws.exe:(.text+0x9ba): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::operator>>(std::istream&, seneca::Professor&)':
+Professor.cpp:(.text+0x584): multiple definition of `seneca::operator>>(std::istream&, seneca::Professor&)'
+ws.exe:(.text+0xc10): first defined here
+/tmp/ccvrVy2Z.o: In function `seneca::operator<<(std::ostream&, seneca::Professor const&)':
+Professor.cpp:(.text+0x5a9): multiple definition of `seneca::operator<<(std::ostream&, seneca::Professor const&)'
+ws.exe:(.text+0xc35): first defined here
+/tmp/ccxu6lmU.o:(.bss+0x0): multiple definition of `seneca::ut'
+ws.exe:(.bss+0x233): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::alocpy(char const*) const':
+Utils.cpp:(.text+0x0): multiple definition of `seneca::Utils::alocpy(char const*) const'
+ws.exe:(.text+0xcda): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::alocpy(char*&, char const*) const':
+Utils.cpp:(.text+0x32): multiple definition of `seneca::Utils::alocpy(char*&, char const*) const'
+ws.exe:(.text+0xd0c): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::strlen(char const*) const':
+Utils.cpp:(.text+0x196): multiple definition of `seneca::Utils::strlen(char const*) const'
+ws.exe:(.text+0xe70): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::strcpy(char*, char const*) const':
+Utils.cpp:(.text+0xbe): multiple definition of `seneca::Utils::strcpy(char*, char const*) const'
+ws.exe:(.text+0xd98): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::strcpy(char*, char const*, int) const':
+Utils.cpp:(.text+0x124): multiple definition of `seneca::Utils::strcpy(char*, char const*, int) const'
+ws.exe:(.text+0xdfe): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::isspace(char) const':
+Utils.cpp:(.text+0x1c8): multiple definition of `seneca::Utils::isspace(char) const'
+ws.exe:(.text+0xea2): first defined here
+/tmp/ccxu6lmU.o: In function `seneca::Utils::isspace(char const*) const':
+Utils.cpp:(.text+0x208): multiple definition of `seneca::Utils::isspace(char const*) const'
+ws.exe:(.text+0xee2): first defined here
+/tmp/ccGkMKtP.o: In function `main':
+main_prof.cpp:(.text+0x0): multiple definition of `main'
+ws.exe:(.text+0xf9e): first defined here
+/tmp/ccGkMKtP.o: In function `prnProf()':
+main_prof.cpp:(.text+0x175): multiple definition of `prnProf()'
+ws.exe:(.text+0x1113): first defined here
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o:(.tm_clone_table+0x0): multiple definition of `__TMC_END__'
+ws.exe:(.data+0x8): first defined here
+/usr/bin/ld: error in ws.exe(.eh_frame); no .eh_frame_hdr table will be created.
+collect2: error: ld returned 1 exit status

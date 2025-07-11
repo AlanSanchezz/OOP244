@@ -1,3 +1,9 @@
+Script started on Tue 12 Nov 2024 09:33:15 PM EST
+==68247== Memcheck, a memory error detector
+==68247== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==68247== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==68247== Command: ws.exe
+==68247== 
 Workshop 7 tester Version 1.1.
 Corrected the order of data in console entery test
 ==================================================
@@ -25,3 +31,13 @@ List of professors in file!
 | Brandine Spuckl | 095421 |  51500 | OOP244-Introduction  |     2 |  1029.99 |
 | Bumblebee Man   | 117493 |  43554 | OOP345 - Object-Orie |     2 |   871.08 |
 | Carl Carlson    | 928072 |  23678 | OOP345 - Object-Orie |     2 |   473.57 |
+==68247== 
+==68247== HEAP SUMMARY:
+==68247==     in use at exit: 0 bytes in 0 blocks
+==68247==   total heap usage: 51 allocs, 51 frees, 83,334 bytes allocated
+==68247== 
+==68247== All heap blocks were freed -- no leaks are possible
+==68247== 
+==68247== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Tue 12 Nov 2024 09:33:24 PM EST

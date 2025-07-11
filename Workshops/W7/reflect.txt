@@ -1,0 +1,5 @@
+In this workshop I learned how to create a derived class in C++ and how to properly override member functions from a base class. I practiced using protected members to access salary information in the derived class without breaking encapsulation. I also reinforced how to manage dynamic memory safely using helper functions from the Utils module especially for handling C-strings.
+
+One of the most challenging parts for me was making sure the custom input and output operators worked exactly as expected and matched the required output format. I had to double-check the alignment, the widths, and the padding to match the sample output. Another tricky part was managing the subject name as a dynamically allocated string — I had to be careful to deallocate it in the destructor to avoid memory leaks.
+
+Overall, this lab helped me understand inheritance more clearly, especially how a derived class can reuse base class logic while adding new attributes and behaviors. I feel more confident about using streams and operator overloading. My only suggestion would be to have more small examples before the workshop, to warm up with simpler derived classes first.
