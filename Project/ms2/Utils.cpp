@@ -1,4 +1,4 @@
-/***********************************************************************
+/***************************************************************
 // OOP244 Project, Utils Module
 //
 // File	Utils.h
@@ -50,54 +50,50 @@ namespace seneca {
 
    bool Utils::isspace(const char* cstring) const{
       while (cstring && isspace(*cstring)) {
-         cstring++;
+         cstring++; 
       }
       return cstring && *cstring == 0;
    }
 
 
-
    int Utils::getInt() const {
-      int value{};
-      bool done = false;
-      while (!done) {
-         cin >> value;
-         if (cin.fail()) {
-            cin.clear();
-            cin.ignore(1000, '\n');
-            cout << "Invalid integer: ";
+     int value;
+     bool valid = false;
+     while (!valid) {
+       if (std::cin.peek() == '\n') {
+         std::cout << "You must enter a value: ";
+         std::cin.ignore(1, '\n');
+       } else {
+         std::cin >> value;
+         if (std::cin.fail()) {
+           std::cin.clear();
+           std::cin.ignore(1000, '\n');
+           std::cout << "Invalid integer: ";
+         } else if (std::cin.peek() != '\n') {
+           std::cout << "Only an integer please: ";
+           std::cin.ignore(1000, '\n');
          } else {
-            char next = cin.get();
-            if (next != '\n') {
-               cout << "Only an integer please: ";
-               cin.ignore(1000, '\n');
-            } else {
-               done = true;
-            }
+           valid = true;
          }
-         if (cin.peek() == '\n') {
-            cin.ignore();
-         }
-         if (cin.eof()) done = true; // handle EOF gracefully
-         if (cin.peek() == '\n' && cin.gcount() == 0) {
-            cout << "You must enter a value: ";
-         }
-      }
-      return value;
+       }
+     }
+     std::cin.ignore(1000, '\n');
+     return value;
    }
 
-   int Utils::getInt(int min, int max, const char* prompt) const {
+   int Utils::getInt(int min, int max) const {
       int value;
-      bool done = false;
-      while (!done) {
-         if (prompt) cout << prompt;
+      bool valid = false;
+      while (!valid) {
          value = getInt();
-         if (value >= min && value <= max) {
-            done = true;
+         if (value < min || value > max) {
+            std::cout << "Invalid value: [" << min << " <= value <= " << max << "], try again: ";
          } else {
-            cout << "Invalid value: [" << min << " <= value <= " << max << "], try again: ";
+            valid = true;
          }
       }
       return value;
    }
+   
+
 }

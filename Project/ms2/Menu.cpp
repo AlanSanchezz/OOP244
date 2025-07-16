@@ -1,5 +1,5 @@
-/***********************************************************************
-// Final Project Milestone 2
+/***************************************************************
+// Final Project Milestone 1
 // Module: Menu
 // File: Menu.cpp
 // Version 1.0
@@ -17,10 +17,7 @@
 #include "constants.h"
 #include "Utils.h"
 
-using namespace std;
 using namespace seneca;
-
-extern Utils ut;
 
 MenuItem::MenuItem(const char* content, unsigned int indent, unsigned int indentSize, int row)
   : m_content(nullptr), m_indent(0), m_indentSize(0), m_row(-1)
@@ -66,49 +63,55 @@ std::ostream& MenuItem::display(std::ostream& os) const {
     os << "??????????";
   }
   return os;
- 
 }
 
 Menu::Menu(const char* title, const char* exitOption, unsigned int indent, unsigned int indentSize)
   : m_indent(indent), m_indentSize(indentSize), m_numItems(0),
     m_title(title, indent, indentSize, -1),
-    m_exit(exitOption, indent, indentSize, 0),
+    m_exitOption(exitOption, indent, indentSize, 0),
     m_prompt("> ", indent, indentSize, -1)
 {
-  for (size_t i = 0; i < MaximumNumberOfMenuItems; ++i) {
+  for (unsigned int i = 0; i < MaximumNumberOfMenuItems; ++i) {
     m_items[i] = nullptr;
   }
 }
 
-Menu& Menu::operator<<(const char* menuItemContent) {
-  if (m_numItems < MaximumNumberOfMenuItems) {
-    m_items[m_numItems] = new MenuItem(menuItemContent, m_indent, m_indentSize, m_numItems + 1);
-    ++m_numItems;
-  }
-  return *this;
-}
-
 Menu::~Menu() {
-  for (size_t i = 0; i < MaximumNumberOfMenuItems; ++i) {
+  for (unsigned int i = 0; i < MaximumNumberOfMenuItems; ++i) {
     delete m_items[i];
     m_items[i] = nullptr;
   }
 }
 
-size_t Menu::select() const {
-  std::cout << std::endl;
-  m_title.display(std::cout) << std::endl;
-  for (size_t i = 0; i < m_numItems; ++i) {
-    m_items[i]->display(std::cout) << std::endl;
+Menu& seneca::Menu::operator<<(const char* menuItemContent) {
+  if (m_numItems < MaximumNumberOfMenuItems && menuItemContent && menuItemContent[0] != '\0') {
+    m_items[m_numItems] = new MenuItem(menuItemContent, m_indent, m_indentSize, static_cast<int>(m_numItems + 1));
+    ++m_numItems;
   }
-  m_exit.display(std::cout) << std::endl;
+  return *this;
+}
+
+size_t Menu::select() const {
+  if (m_title) {
+    m_title.display(std::cout) << std::endl;
+  }
+  for (unsigned int i = 0; i < m_numItems; ++i) {
+    if (m_items[i]) {
+      m_items[i]->display(std::cout) << std::endl;
+    }
+  }
+  m_exitOption.display(std::cout) << std::endl;
   m_prompt.display(std::cout);
-  return ut.getInt(0, static_cast<int>(m_numItems));
+
+  int selection = ut.getInt(0, static_cast<int>(m_numItems));
+  return static_cast<size_t>(selection);
 }
 
-std::ostream& seneca::operator<<(std::ostream& os, const Menu& menu) {
-  return menu.display(os);
+size_t seneca::operator<<(std::ostream& ostr, const Menu& m) {
+  if (&ostr == &std::cout) {
+    return m.select();
+  } else {
+    return 0;
+  }
 }
-
-
 
