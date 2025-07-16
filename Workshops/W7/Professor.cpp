@@ -45,7 +45,6 @@ namespace seneca {
       m_subject = ut.alocpy(buffer); 
       istr >> std::ws >> m_numSections; 
       if (!istr) return istr;
-      istr.ignore(1000, '\n');
       return istr;
    }
 

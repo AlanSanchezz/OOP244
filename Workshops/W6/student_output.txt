@@ -1,9 +1,9 @@
-Script started on Wed 09 Jul 2025 11:14:00 PM EDT
-==144143== Memcheck, a memory error detector
-==144143== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==144143== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
-==144143== Command: ws.exe
-==144143== 
+Script started on Fri 11 Jul 2025 11:43:48 AM EDT
+==160639== Memcheck, a memory error detector
+==160639== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==160639== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==160639== Command: ws.exe
+==160639== 
 
 Content of "numbers.txt"
 *****************************************************************
@@ -174,13 +174,13 @@ Smallest number: -5.00
 Average:         182.24
 =========================
 *****************************************************************
-==144143== 
-==144143== HEAP SUMMARY:
-==144143==     in use at exit: 0 bytes in 0 blocks
-==144143==   total heap usage: 78 allocs, 78 frees, 232,759 bytes allocated
-==144143== 
-==144143== All heap blocks were freed -- no leaks are possible
-==144143== 
-==144143== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==160639== 
+==160639== HEAP SUMMARY:
+==160639==     in use at exit: 0 bytes in 0 blocks
+==160639==   total heap usage: 78 allocs, 78 frees, 232,759 bytes allocated
+==160639== 
+==160639== All heap blocks were freed -- no leaks are possible
+==160639== 
+==160639== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 
-Script done on Wed 09 Jul 2025 11:14:04 PM EDT
+Script done on Fri 11 Jul 2025 11:43:51 AM EDT
