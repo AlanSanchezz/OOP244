@@ -26,10 +26,10 @@ void Rectangle::draw(std::ostream& os) const {
         for (int i = 0; i < m_width - 2; ++i) os << '-';
         os << '+' << std::endl;
         // Label line
-        os << '|';
+        os << "| ";
         os << label();
         int labelLen = ut.strlen(label());
-        for (int i = 0; i < m_width - 2 - labelLen; ++i) os << ' ';
+        for (int i = 0; i < m_width - 3 - labelLen; ++i) os << ' ';
         os << '|' << std::endl;
 
         // Empty lines
