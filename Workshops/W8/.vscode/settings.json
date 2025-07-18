@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "istream": "cpp",
+        "bitset": "cpp",
+        "filesystem": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "string": "cpp",
+        "complex": "cpp",
+        "sstream": "cpp"
+    }
+}
