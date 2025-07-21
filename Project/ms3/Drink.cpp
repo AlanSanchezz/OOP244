@@ -16,7 +16,7 @@ namespace seneca {
 
   // Prompt user to select size
   bool Drink::order() {
-    std::cout << "   Drink Size Selection\n"
+    std::cout << "         Drink Size Selection\n"
               << "      1- Small\n"
               << "      2- Medium\n"
               << "      3- Large\n"
