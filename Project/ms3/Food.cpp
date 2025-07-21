@@ -49,7 +49,7 @@ namespace seneca {
               << "          1- Adult\n"
               << "          2- Child\n"
               << "          0- Back\n"
-              << "       > ";
+              << "         > ";
     int selection = ut.getInt(0, 2);
     switch (selection) {
       case 1: m_child = false; m_ordered = true; break;
