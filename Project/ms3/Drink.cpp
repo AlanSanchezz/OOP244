@@ -22,7 +22,7 @@ namespace seneca {
               << "          3- Larg\n"
               << "          4- Extra Large\n"
               << "          0- Back\n"
-              << "        > ";
+              << "         > ";
     int selection = ut.getInt(0, 4);
     switch (selection) {
       case 1: m_size = 'S'; break;
