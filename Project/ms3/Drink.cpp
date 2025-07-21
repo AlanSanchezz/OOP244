@@ -19,7 +19,7 @@ namespace seneca {
     std::cout << "         Drink Size Selection\n"
               << "          1- Small\n"
               << "          2- Medium\n"
-              << "          3- Large\n"
+              << "          3- Larg\n"
               << "          4- Extra Large\n"
               << "          0- Back\n"
               << "   > ";
