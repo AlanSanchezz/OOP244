@@ -17,11 +17,11 @@ namespace seneca {
   // Prompt user to select size
   bool Drink::order() {
     std::cout << "         Drink Size Selection\n"
-              << "      1- Small\n"
-              << "      2- Medium\n"
-              << "      3- Large\n"
-              << "      4- Extra Large\n"
-              << "      0- Back\n"
+              << "  1- Small\n"
+              << "  2- Medium\n"
+              << "  3- Large\n"
+              << "  4- Extra Large\n"
+              << "  0- Back\n"
               << "   > ";
     int selection = ut.getInt(0, 4);
     switch (selection) {
