@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     m2
+binary-path:     ms3
 relocations:     []
 ...
