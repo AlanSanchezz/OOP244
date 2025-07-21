@@ -45,7 +45,7 @@ namespace seneca {
 
   // Order function for portion selection and customization
   bool Food::order() {
-    std::cout << "   Food Size Selection\n"
+    std::cout << "         Food Size Selection\n"
               << "      1- Adult\n"
               << "      2- Child\n"
               << "      0- Back\n"
