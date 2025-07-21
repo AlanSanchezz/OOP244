@@ -57,7 +57,7 @@ namespace seneca {
       case 0: m_ordered = false; delete[] m_customize; m_customize = nullptr; return false;
     }
 
-    std::cout << "   Special instructions\n   > ";
+    std::cout << "Special instructions\n   > ";
     char temp[1000]{};
     std::cin.getline(temp, 1000);
     if (std::strlen(temp) == 0) {
