@@ -1,0 +1,5 @@
+In this workshop, I practiced working with inheritance, dynamic memory management, and the Rule of Three. The Marks module provided a base structure for handling collections of data, and extending it in the Transcript class helped reinforce my understanding of how base and derived classes interact. Implementing the constructor, copy constructor, assignment operator, and destructor reminded me how important it is to manage resources correctly to avoid memory leaks or dangling pointers.
+
+Overriding the display function also helped me learn how to properly match base class signatures and return types to avoid errors. The tester code was useful for validating deep copies, dynamic arrays, and inheritance behavior. I also realized how powerful method chaining can be when adding marks.
+
+Overall, this workshop helped me gain more confidence in working with C++ classes and memory, and I feel better prepared to handle more complex object-oriented problems in the future.
