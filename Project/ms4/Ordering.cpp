@@ -164,7 +164,7 @@ void Ordering::printTotals(std::ostream& os, double total) const {
     os << setw(27) << right << fixed << setprecision(2)
        << "Total:" << setw(13) << total << endl;
     os << setw(25) << "Tax:" << setw(15) << tax << endl;
-    os << setw(23) << "Total+Tax:" << setw(10) << (total + tax) << endl;
+    os << setw(31) << "Total+Tax:" << setw(10) << (total + tax) << endl;
     os << "========================================" << endl;
 }
 
