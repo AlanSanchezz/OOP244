@@ -161,8 +161,8 @@ void Ordering::printBillTitle(std::ostream& os) const {
 // Print Totals
 void Ordering::printTotals(std::ostream& os, double total) const {
     const double tax = total * Tax;
-    os << setw(21) << right << fixed << setprecision(2)
-       << "Total:" << setw(12) << total << endl;
+    os << setw(27) << right << fixed << setprecision(2)
+       << "Total:" << setw(10) << total << endl;
     os << setw(27) << "Tax:" << setw(10) << tax << endl;
     os << setw(27) << "Total+Tax:" << setw(10) << (total + tax) << endl;
     os << "========================================" << endl;
