@@ -1,0 +1,85 @@
+Script started on Fri 29 Nov 2024 10:56:51 AM EST
+==101840== Memcheck, a memory error detector
+==101840== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==101840== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==101840== Command: ws.exe
+==101840== 
+Seneca Restaurant 
+ 1- Order
+ 2- Print Bill
+ 3- Start a New Bill
+ 4- List Foods
+ 5- List Drinks
+ 0- End Program
+> 1
+   Order Menu
+    1- Food
+    2- Drink
+    0- Back to main menu
+   > 1
+      Food Menu
+       1- Hamberger
+       2- Cheese Burger
+       3- Veggie Burger
+       4- Hot Dog
+       5- Pasta with Tomato sauce
+       6- Fries
+       7- Poutine with beef
+       8- Poutine
+       0- Back to Order
+      > 1
+         Food Size Selection
+          1- Adult
+          2- Child
+          0- Back
+         > 0
+   Order Menu
+    1- Food
+    2- Drink
+    0- Back to main menu
+   > 1
+      Food Menu
+       1- Hamberger
+       2- Cheese Burger
+       3- Veggie Burger
+       4- Hot Dog
+       5- Pasta with Tomato sauce
+       6- Fries
+       7- Poutine with beef
+       8- Poutine
+       0- Back to Order
+      > 1
+         Food Size Selection
+          1- Adult
+          2- Child
+          0- Back
+         > 1
+Special instructions
+> well done
+   Order Menu
+    1- Food
+    2- Drink
+    0- Back to main menu
+   > 0
+Seneca Restaurant 
+ 1- Order
+ 2- Print Bill
+ 3- Start a New Bill
+ 4- List Foods
+ 5- List Drinks
+ 0- End Program
+> 0
+You have bills that are not saved, are you sue you want to exit?
+ 1- Yes
+ 0- No
+> 1
+==101840== 
+==101840== HEAP SUMMARY:
+==101840==     in use at exit: 0 bytes in 0 blocks
+==101840==   total heap usage: 116 allocs, 116 frees, 110,836 bytes allocated
+==101840== 
+==101840== All heap blocks were freed -- no leaks are possible
+==101840== 
+==101840== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 29 Nov 2024 11:00:56 AM EST
