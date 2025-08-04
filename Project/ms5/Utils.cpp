@@ -87,7 +87,7 @@ namespace seneca {
       while (!valid) {
          value = getInt();
          if (value < min || value > max) {
-            std::cout << "Invalid value: [" << min << " <= value <= " << max << "], try again: ";
+            std::cout << "Invalid value: [" << min << "<= value <= " << max << "], try again: ";
          } else {
             valid = true;
          }
