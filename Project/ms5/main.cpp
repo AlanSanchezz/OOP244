@@ -48,10 +48,10 @@ int main() {
          test1();
          break;
       case 2:
-<<<<<<< HEAD
-=======
+
+
          ordering.printBill(cout);
->>>>>>> e2ae6e44f20a7eca35c577c9c953592073eabd7b
+
          break;
       case 3:
          break;
