@@ -54,6 +54,7 @@ int main() {
 
          break;
       case 3:
+         ordering.resetBill();
          break;
       case 4:
          ordering.listFoods();
