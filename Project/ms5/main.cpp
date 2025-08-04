@@ -35,7 +35,7 @@ int main() {
    size_t selection{}, select{};
     Menu mainMenu("Seneca Restaurant ", "End Program");
     mainMenu << "Order" << "Print Bill" << "Start a New Bill" << "List Foods" << "List Drinks";
-    Menu exit("You have bills that are not saved. Are you sue you want to exit?", "No");
+    Menu exit("You have bills that are not saved, are you sue you want to exit?", "No");
     exit << "Yes";
 
     do {

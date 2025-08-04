@@ -1,14 +1,14 @@
-In line number 18 of your output:
+In line number 60 of your output:
 The output should be:
-    0- Back to main menu
-                    ^
+You have bills that are not saved, are you sue you want to exit?
+                                 ^
 But your output is: 
-    0- Back to main Menu
-                    ^
+You have bills that are not saved. Are you sue you want to exit?
+                                 ^
 
 Unmatched character details:
-The character in column 21 is supposed to be:
-  [m] ASCII code(109)
+The character in column 34 is supposed to be:
+  [,] ASCII code(44)
 but you printed
-  [M] ASCII code(77)
+  [.] ASCII code(46)
 
