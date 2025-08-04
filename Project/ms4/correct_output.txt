@@ -1,3 +1,9 @@
+Script started on Mon 25 Nov 2024 01:26:51 PM EST
+==103304== Memcheck, a memory error detector
+==103304== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==103304== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==103304== Command: ws.exe
+==103304== 
 Testing Invalid Ordering if data file don't exist!
 Passed!
 Testing list foods..................................
@@ -91,3 +97,13 @@ Pepsi.......................SML..   2.25
                      Tax:           1.85
                      Total+Tax:    16.10
 ========================================
+==103304== 
+==103304== HEAP SUMMARY:
+==103304==     in use at exit: 0 bytes in 0 blocks
+==103304==   total heap usage: 95 allocs, 95 frees, 146,289 bytes allocated
+==103304== 
+==103304== All heap blocks were freed -- no leaks are possible
+==103304== 
+==103304== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Mon 25 Nov 2024 01:27:00 PM EST

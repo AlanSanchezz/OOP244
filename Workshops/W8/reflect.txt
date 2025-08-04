@@ -1,0 +1,5 @@
+During this workshop, I gained a deeper understanding of virtual functions, abstract base classes, and how dynamic polymorphism works in C++. I learned how to use pure virtual functions to enforce implementation in derived classes and how abstract classes like Shape and LblShape help structure code in a flexible and reusable way. Implementing the Line and Rectangle classes allowed me to practice inheritance, function overriding, and proper use of dynamic memory, especially with character pointers.
+
+One of the main difficulties I faced was debugging layout issues in the output, particularly matching exact spacing required by the tester. Another challenge was managing label alignment and ensuring memory was correctly handled without leaks.
+
+As feedback, I would suggest that more clarification be provided on formatting expectations in advance—perhaps through a visual output example—so students can avoid unnecessary frustration due to minor output mismatches. Overall, the workshop was very helpful for reinforcing OOP fundamentals.
