@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "istream": "cpp",
+        "__bit_reference": "cpp",
+        "__node_handle": "cpp",
+        "deque": "cpp",
+        "ios": "cpp",
+        "optional": "cpp",
+        "memory": "cpp"
+    }
+}
