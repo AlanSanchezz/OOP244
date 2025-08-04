@@ -6,6 +6,7 @@
         "deque": "cpp",
         "ios": "cpp",
         "optional": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "__config": "cpp"
     }
 }
