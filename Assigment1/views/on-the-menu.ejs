@@ -1,0 +1,16 @@
+
+<h1 class="mb-4">Desserts by Category</h1>
+<div class="container-xl">
+	<div class="menu-categories">
+		<% mealKitsByCategory.forEach(function(category) { %>
+			<h2 class="mt-4 mb-3"><%= category.categoryName %></h2>
+			<div class="row justify-content-center">
+				<% category.mealKits.forEach(function(kit) { %>
+					<div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+						<%- include('partials/mealkit', { kit: kit }) %>
+					</div>
+				<% }); %>
+			</div>
+		<% }); %>
+	</div>
+</div>

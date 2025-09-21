@@ -1,0 +1,11 @@
+<div class="card m-2 mx-auto">
+  <img src="<%= kit.imageUrl %>" class="card-img-top mealkit-img" alt="<%= kit.title %>" onmouseover="this.src=this.src.replace(/(\.\w+)$/, '-hover$1')" onmouseout="this.src=this.src.replace('-hover', '')">
+  <div class="card-body">
+    <h5 class="card-title"><%= kit.title %></h5>
+    <p class="card-text"><%= kit.description %></p>
+    <p class="card-text"><strong>Includes:</strong> <%= kit.includes %></p>
+    <p class="card-text"><strong>Price:</strong> $<%= kit.price %></p>
+    <p class="card-text"><strong>Cooking Time:</strong> <%= kit.cookingTime %> min</p>
+    <p class="card-text"><strong>Servings:</strong> <%= kit.servings %></p>
+  </div>
+</div>
